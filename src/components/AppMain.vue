@@ -1,12 +1,14 @@
 <script>
 import AppJumbotron from "./AppJumbotron.vue";
 import AppComic from "./AppComic.vue";
+import AppBanner from "./AppBanner.vue";
 
 export default {
   name: "AppMain",
   components: {
     AppJumbotron,
     AppComic,
+    AppBanner,
   },
   data() {
     return {
@@ -116,6 +118,9 @@ export default {
       <button>Load more</button>
     </div>
   </section>
+  <section class="banner">
+    <AppBanner></AppBanner>
+  </section>
 </template>
 
 <style scoped>
@@ -145,5 +150,9 @@ button {
   text-transform: uppercase;
   border: none;
   margin-bottom: 1.5rem;
+}
+
+.banner {
+  background: var(--dc-primary);
 }
 </style>

@@ -9,7 +9,7 @@ export default {
 
 <template>
   <div class="card">
-    <img :src="comic.thumb" :alt="comic.series.replace(' ', '_')" />
+    <img :src="comic.thumb" :alt="comic.series.replaceAll(' ', '_')" />
     <div class="card-info d-flex justify-content-between">
       <span class="series">{{ comic.series }}</span>
       <span class="price">{{ comic.price }}</span>
@@ -20,8 +20,8 @@ export default {
 
 <style scoped>
 .card {
-  position: relative;
   height: 100%;
+  position: relative;
 }
 
 img {
@@ -35,12 +35,17 @@ img {
   flex-direction: column;
 }
 
-.series,
+.series {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .price,
 .type {
   padding-inline: 0.5rem;
-  border-radius: 10px;
-  top: 10px;
+  top: 0;
+  transform: translateY(-50%);
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
@@ -48,14 +53,14 @@ img {
 
 .price {
   position: absolute;
-  right: 10px;
+  right: 5px;
   background: yellow;
   color: var(--dc-dark);
 }
 
 .type {
   position: absolute;
-  left: 10px;
+  left: 5px;
   background: var(--dc-primary);
   color: var(--dc-light);
 }
