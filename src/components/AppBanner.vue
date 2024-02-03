@@ -35,7 +35,7 @@ export default {
     <ul class="d-flex justify-content-between">
       <li class="d-flex align-items-center" v-for="bannerItem in bannerList">
         <img
-          :src="'../../src/assets/img/' + bannerItem.img"
+          :src="'/src/assets/img/' + bannerItem.img"
           :alt="bannerItem.title.replaceAll(' ', '_')"
         />
         <span>{{ bannerItem.title }}</span>

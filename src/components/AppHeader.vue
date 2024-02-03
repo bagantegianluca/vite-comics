@@ -84,6 +84,7 @@ header {
     a {
       color: var(--dc-dark);
       font-weight: 700;
+      font-size: 0.9rem;
       text-transform: uppercase;
     }
   }

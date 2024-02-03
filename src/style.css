@@ -5,6 +5,7 @@
   list-style: none;
   font-family: 'Open Sans', sans-serif;
   color: white;
+  letter-spacing: -1px;
 
   a {
     text-decoration: none;
