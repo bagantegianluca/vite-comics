@@ -77,7 +77,7 @@ export default {
 header {
   background: var(--dc-light);
   li {
-    margin-inline: 1rem;
+    margin-left: 2rem;
     padding-block: 4rem;
     border-bottom: 4px solid transparent;
     transition: all 0.25s;
