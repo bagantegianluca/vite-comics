@@ -102,25 +102,27 @@ export default {
 </script>
 
 <template>
-  <section>
-    <AppJumbotron></AppJumbotron>
-  </section>
-  <section>
-    <div class="container">
-      <span class="title">Current series</span>
-      <div class="row d-flex">
-        <div class="col" v-for="comic in comics">
-          <AppComic :comic="comic"></AppComic>
+  <main>
+    <section>
+      <AppJumbotron></AppJumbotron>
+    </section>
+    <section>
+      <div class="container">
+        <span class="title">Current series</span>
+        <div class="row d-flex">
+          <div class="col" v-for="comic in comics">
+            <AppComic :comic="comic"></AppComic>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="btn d-flex justify-content-center">
-      <button>Load more</button>
-    </div>
-  </section>
-  <section class="banner">
-    <AppBanner></AppBanner>
-  </section>
+      <div class="btn d-flex justify-content-center">
+        <button>Load more</button>
+      </div>
+    </section>
+    <section class="banner">
+      <AppBanner></AppBanner>
+    </section>
+  </main>
 </template>
 
 <style scoped>
@@ -149,7 +151,7 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   border: none;
-  margin-bottom: 1.5rem;
+  margin-block: 1.5rem;
 }
 
 .banner {
