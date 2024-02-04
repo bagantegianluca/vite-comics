@@ -49,6 +49,17 @@ ul {
   padding: 3rem 0;
 }
 
+li {
+  cursor: pointer;
+  transition: all 0.5s;
+  border-bottom: 2px solid transparent;
+  padding-block: 0.25rem;
+}
+
+li:hover {
+  border-bottom: 2px solid var(--dc-light);
+}
+
 img {
   max-width: 50px;
   max-height: 50px;

@@ -26,6 +26,11 @@ h3 {
 a {
   font-size: 0.8rem;
   color: var(--dc-gray);
+  transition: all 0.25s;
+}
+
+a:hover {
+  color: var(--dc-light);
 }
 
 .col {

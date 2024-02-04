@@ -22,6 +22,14 @@ export default {
 .card {
   height: 100%;
   position: relative;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: all 0.5s;
+}
+
+.card:hover {
+  opacity: 1;
+  scale: 1.1;
 }
 
 img {

@@ -60,7 +60,14 @@ a {
   color: var(--dc-light);
   padding: 1rem;
   border: 1px solid var(--dc-primary);
+  transition: all 0.5s;
 }
+
+a:active {
+  background: var(--dc-primary);
+  color: var(--dc-light);
+}
+
 span {
   text-transform: uppercase;
   color: var(--dc-primary);
