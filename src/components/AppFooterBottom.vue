@@ -33,12 +33,14 @@ export default {
 <template>
   <div class="footer-bottom">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="#">Sign-up now!</a>
+      <a href="#" class="btn">Sign-up now!</a>
       <div class="social-links d-flex align-items-center">
         <span>Follow us</span>
         <ul class="d-flex">
           <li v-for="social in socials">
-            <img :src="'/src/assets/img/' + social.img" :alt="social.title" />
+            <a href="#"
+              ><img :src="'/src/assets/img/' + social.img" :alt="social.title"
+            /></a>
           </li>
         </ul>
       </div>
@@ -52,7 +54,7 @@ export default {
   padding-block: 2rem;
 }
 
-a {
+.btn {
   display: inline-block;
   font-size: 1rem;
   font-weight: bold;
@@ -63,7 +65,7 @@ a {
   transition: all 0.5s;
 }
 
-a:active {
+.btn:active {
   background: var(--dc-primary);
   color: var(--dc-light);
 }

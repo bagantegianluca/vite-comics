@@ -61,8 +61,9 @@ li:hover {
 }
 
 img {
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 span {
   display: inline-block;
